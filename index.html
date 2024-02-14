@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Cado API Reference</title>
+        <link rel="icon" href="static/favicon.svg" />
+        <link href="https://fonts.googleapis.com/css?family=Inter:300,400,700" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="apidocs"></div>
+        <script src="https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js"></script>
+        <script>
+            Redoc.init(
+                "cado-api.json",
+                {
+                    hideDownloadButton: true,
+                    hideHostname: true,
+                    nativeScrollbars: true,
+                    pathInMiddlePanel: true,
+                    requiredPropsFirst: true,
+                    showExtensions: true,
+                    theme: {
+                        typography: {
+                            fontFamily: "Inter, sans-serif",
+                            headers: {
+                                fontFamily: "Inter, sans-serif",
+                            },
+                            links: {
+                                color: "#16A34A",
+                                visited: "#16A34A",
+                                hover: "#16A34A",
+                                textDecoration: "none",
+                                hoverTextDecoration: "underline",
+                            },
+                            code: {
+                                fontFamily: "monospace",
+                            },
+                        },
+                        sidebar: {
+                            backgroundColor: "#082239",
+                            textColor: "#fff",
+                        },
+                        logo: {
+                            gutter: "48px",
+                        },
+                        rightPanel: {
+                            backgroundColor: "#082239",
+                        },
+                    },
+                },
+                document.getElementById("apidocs"),
+            );
+        </script>
+    </body>
+</html>
