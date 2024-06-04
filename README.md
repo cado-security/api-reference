@@ -8,3 +8,6 @@ Each API will have a few extra parameters listed in the description, these param
 
 * **Feature Lifecycle**: This indicates if the API is in `beta` or `production`. If the API is in `beta`, you may need to enable it in the Experiments settings inside the platform.
 * **Admin Only**: This indicates if the API requires an administrator user account.
+
+## Running locally
+Use the `run.sh` command to start a HTTP server that serves the docs from port 8000.
